@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTV FMS | Facilities Management & Cleaning Services – Gauteng, South Africa</title>
+  <meta name="description" content="GTV FMS is Gauteng's premier facilities management and professional cleaning services company. Serving offices, shopping centres, factories, schools and estates across Johannesburg and Pretoria. Request a free quote today." />
+  <meta name="keywords" content="facilities management Gauteng, cleaning services Johannesburg, office cleaning Pretoria, industrial cleaning, hygiene services South Africa, GTV FMS" />
+  <meta property="og:title" content="GTV FMS | Facilities Management & Cleaning Services" />
+  <meta property="og:description" content="Professional facilities management and cleaning services across Gauteng. Trusted by offices, malls, factories and estates." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50:  '#e6eaf2',
+              100: '#c0cce0',
+              200: '#97abcb',
+              300: '#6d8ab7',
+              400: '#4f72a8',
+              500: '#305a99',
+              600: '#1f4a8a',
+              700: '#0f3575',
+              800: '#062460',
+              900: '#003087',
+              950: '#001d54',
+            },
+            emerald2: {
+              400: '#33bf7a',
+              500: '#00A651',
+              600: '#008a42',
+              700: '#007035',
+            },
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          },
+          backgroundImage: {
+            'hero-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.7s ease forwards',
+            'fade-in': 'fadeIn 0.6s ease forwards',
+            'slide-right': 'slideRight 0.7s ease forwards',
+            'float': 'float 3s ease-in-out infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4,0,0.6,1) infinite',
+            'count': 'countUp 2s ease-out forwards',
+          },
+          keyframes: {
+            fadeUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideRight: { '0%': { opacity: '0', transform: 'translateX(-30px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --navy: #003087;
+      --green: #00A651;
+      --white: #ffffff;
+      --light: #f4f7fb;
+      --gray: #64748b;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; color: #1e293b; background: #fff; scroll-behavior: smooth; }
+    h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
+
+    /* NAV */
+    .nav-scrolled { background: rgba(0,48,135,0.97) !important; backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+
+    /* HERO */
+    .hero-bg {
+      background: linear-gradient(135deg, #001d54 0%, #003087 50%, #00452a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.18;
+      pointer-events: none;
+    }
+    .hero-orb-1 { width: 600px; height: 600px; background: #00A651; top: -150px; right: -100px; }
+    .hero-orb-2 { width: 400px; height: 400px; background: #003087; bottom: -100px; left: -80px; }
+
+    /* STAT CARD */
+    .stat-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    /* SERVICE CARDS */
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #e2e8f0;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy), var(--green));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,48,135,0.12); }
+    .service-card:hover::before { transform: scaleX(1); }
+
+    /* SECTION DIVIDER */
+    .section-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,166,81,0.1);
+      color: #00A651;
+      border: 1px solid rgba(0,166,81,0.25);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Syne', sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* BADGE STRIPE */
+    .badge-stripe { background: linear-gradient(90deg, #003087, #00A651); }
+
+    /* WHY CARD */
+    .why-card {
+      border-left: 3px solid var(--green);
+      transition: all 0.3s;
+    }
+    .why-card:hover { background: #f0faf5; border-left-color: var(--navy); }
+
+    /* TESTIMONIAL */
+    .testimonial-card {
+      border: 1px solid #e2e8f0;
+      transition: box-shadow 0.3s;
+    }
+    .testimonial-card:hover { box-shadow: 0 12px 32px rgba(0,48,135,0.1); }
+
+    /* QUOTE FORM */
+    .quote-section { background: linear-gradient(135deg, #001d54 0%, #003087 100%); }
+    .form-input {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      border-radius: 8px;
+      padding: 12px 16px;
+      width: 100%;
+      font-family: 'DM Sans', sans-serif;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .form-input::placeholder { color: rgba(255,255,255,0.5); }
+    .form-input:focus { outline: none; border-color: #00A651; background: rgba(255,255,255,0.15); }
+    .form-select option { color: #1e293b; background: white; }
+
+    /* WHATSAPP FLOAT */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: float 3s ease-in-out infinite;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,0.6); }
+
+    /* REVEAL ANIMATION */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* COUNTER */
+    .counter-num { font-variant-numeric: tabular-nums; }
+
+    /* MOBILE MENU */
+    #mobile-menu { transition: max-height 0.35s ease, opacity 0.3s; overflow: hidden; max-height: 0; opacity: 0; }
+    #mobile-menu.open { max-height: 500px; opacity: 1; }
+
+    /* SCROLL PROGRESS */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: linear-gradient(90deg, #003087, #00A651);
+      z-index: 10000; width: 0%; transition: width 0.1s;
+    }
+
+    /* INDUSTRY LOGOS */
+    .industry-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; border: 1px solid #e2e8f0;
+      border-radius: 100px; padding: 8px 18px;
+      font-size: 14px; font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s;
+    }
+    .industry-pill:hover { box-shadow: 0 6px 20px rgba(0,48,135,0.1); }
+  </style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div id="progress-bar"></div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-18 py-4">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, #00A651, #007035);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-display font-800 text-white text-xl leading-none tracking-tight" style="font-weight:800;">GTV FMS</div>
+          <div class="text-xs text-white/60 font-body tracking-wide">Facilities Management</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#home" class="text-white/90 hover:text-white font-body font-500 text-sm transition-colors">Home</a>
+        <a href="#about" class="text-white/90 hover:text-white font-body font-500 text-sm transition-colors">About Us</a>
+        <a href="#services" class="text-white/90 hover:text-white font-body font-500 text-sm transition-colors">Services</a>
+        <a href="#why-us" class="text-white/90 hover:text-white font-body font-500 text-sm transition-colors">Why Us</a>
+        <a href="#testimonials" class="text-white/90 hover:text-white font-body font-500 text-sm transition-colors">Clients</a>
+        <a href="#contact" class="text-white/90 hover:text-white font-body font-500 text-sm transition-colors">Contact</a>
+        <a href="#quote" class="px-5 py-2.5 rounded-lg text-sm font-display font-700 text-white transition-all hover:opacity-90 hover:scale-105" style="background: #00A651; font-weight:700;">
+          Free Quote
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Open menu">
+        <svg id="menu-icon-open" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="menu-icon-close" class="hidden" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden">
+      <div class="flex flex-col gap-1 pb-4 border-t border-white/10 pt-4">
+        <a href="#home" class="mobile-link text-white/90 hover:text-white font-body py-2.5 px-3 rounded-lg hover:bg-white/10 transition-all text-sm">Home</a>
+        <a href="#about" class="mobile-link text-white/90 hover:text-white font-body py-2.5 px-3 rounded-lg hover:bg-white/10 transition-all text-sm">About Us</a>
+        <a href="#services" class="mobile-link text-white/90 hover:text-white font-body py-2.5 px-3 rounded-lg hover:bg-white/10 transition-all text-sm">Services</a>
+        <a href="#why-us" class="mobile-link text-white/90 hover:text-white font-body py-2.5 px-3 rounded-lg hover:bg-white/10 transition-all text-sm">Why Us</a>
+        <a href="#testimonials" class="mobile-link text-white/90 hover:text-white font-body py-2.5 px-3 rounded-lg hover:bg-white/10 transition-all text-sm">Clients</a>
+        <a href="#contact" class="mobile-link text-white/90 hover:text-white font-body py-2.5 px-3 rounded-lg hover:bg-white/10 transition-all text-sm">Contact</a>
+        <a href="#quote" class="mobile-link mt-2 text-center py-3 rounded-lg text-sm font-display font-700 text-white" style="background:#00A651; font-weight:700;">Get a Free Quote</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero-bg min-h-screen flex flex-col justify-center relative">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <!-- Top badge bar -->
+  <div class="absolute top-0 left-0 right-0 badge-stripe py-2 text-center text-xs text-white/90 font-body tracking-widest uppercase font-500 z-10" style="margin-top:0; padding-top:2px; padding-bottom:2px; font-size:11px;">
+    ✦ Proudly South African &nbsp;|&nbsp; CIPC Registered &nbsp;|&nbsp; Serving Gauteng Since 2015 &nbsp;|&nbsp; OHSA Compliant ✦
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Hero Text -->
+      <div>
+        <div class="section-chip mb-6" style="background:rgba(0,166,81,0.15); color:#33bf7a; border-color:rgba(0,166,81,0.3);">
+          <span>🏢</span> Gauteng's Trusted FM Partner
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6" style="font-weight:800; line-height:1.1;">
+          Clean Spaces.<br/>
+          <span style="color:#00A651;">Managed</span><br/>
+          Efficiently.
+        </h1>
+
+        <p class="font-body text-white/75 text-lg leading-relaxed mb-8 max-w-lg">
+          GTV FMS delivers world-class facilities management and professional cleaning services to offices, shopping centres, factories, schools and estates across <strong class="text-white font-500">Johannesburg and Pretoria</strong>.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-12">
+          <a href="#quote" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-display text-white font-700 text-base transition-all hover:opacity-90 hover:scale-105 hover:shadow-2xl" style="background:#00A651; font-weight:700; box-shadow:0 8px 24px rgba(0,166,81,0.35);">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Get a Free Quote
+          </a>
+          <a href="tel:+27100000000" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-body font-500 text-white border border-white/30 text-base transition-all hover:bg-white/10">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.82 19.79 19.79 0 01.1 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            Call Now
+          </a>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="grid grid-cols-3 gap-4">
+          <div class="stat-card rounded-xl p-4 text-center">
+            <div class="font-display text-3xl text-white counter-num font-800" style="font-weight:800;" data-target="200">0+</div>
+            <div class="text-white/60 text-xs mt-1 font-body">Clients Served</div>
+          </div>
+          <div class="stat-card rounded-xl p-4 text-center">
+            <div class="font-display text-3xl text-white counter-num font-800" style="font-weight:800;" data-target="10">0+</div>
+            <div class="text-white/60 text-xs mt-1 font-body">Years Experience</div>
+          </div>
+          <div class="stat-card rounded-xl p-4 text-center">
+            <div class="font-display text-3xl text-white counter-num font-800" style="font-weight:800;" data-target="98">0%</div>
+            <div class="text-white/60 text-xs mt-1 font-body">Client Retention</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Panel -->
+      <div class="hidden lg:block relative">
+        <!-- Main card -->
+        <div class="relative rounded-3xl overflow-hidden" style="background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); backdrop-filter:blur(12px); padding:2px;">
+          <div class="rounded-3xl overflow-hidden" style="background:linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.04));">
+
+            <!-- Mock dashboard card -->
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-5">
+                <div>
+                  <div class="font-display text-white font-700 text-lg" style="font-weight:700;">Service Dashboard</div>
+                  <div class="text-white/50 text-xs font-body">Live facility status</div>
+                </div>
+                <div class="flex gap-1.5">
+                  <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                  <div class="w-3 h-3 rounded-full" style="background:#00A651;"></div>
+                </div>
+              </div>
+
+              <!-- Status items -->
+              <div class="space-y-3">
+                <div class="flex items-center justify-between bg-white/10 rounded-xl px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(0,166,81,0.2);">
+                      <svg width="16" height="16" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <div>
+                      <div class="text-white text-sm font-500 font-body">Office Block A – Sandton</div>
+                      <div class="text-white/50 text-xs font-body">Daily cleaning in progress</div>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-full font-500 font-body" style="background:rgba(0,166,81,0.2); color:#33bf7a;">Active</span>
+                </div>
+
+                <div class="flex items-center justify-between bg-white/10 rounded-xl px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(0,48,135,0.3);">
+                      <svg width="16" height="16" fill="none" stroke="#6baef5" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <div>
+                      <div class="text-white text-sm font-500 font-body">Retail Mall – Centurion</div>
+                      <div class="text-white/50 text-xs font-body">Hygiene services scheduled</div>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-full font-500 font-body" style="background:rgba(251,191,36,0.15); color:#fbbf24;">Scheduled</span>
+                </div>
+
+                <div class="flex items-center justify-between bg-white/10 rounded-xl px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(0,166,81,0.2);">
+                      <svg width="16" height="16" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+                    </div>
+                    <div>
+                      <div class="text-white text-sm font-500 font-body">Factory – Germiston</div>
+                      <div class="text-white/50 text-xs font-body">Deep clean completed</div>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-full font-500 font-body" style="background:rgba(0,166,81,0.2); color:#33bf7a;">Done ✓</span>
+                </div>
+
+                <div class="flex items-center justify-between bg-white/10 rounded-xl px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(0,48,135,0.3);">
+                      <svg width="16" height="16" fill="none" stroke="#6baef5" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <div>
+                      <div class="text-white text-sm font-500 font-body">School – Pretoria East</div>
+                      <div class="text-white/50 text-xs font-body">Maintenance + sanitisation</div>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-full font-500 font-body" style="background:rgba(0,166,81,0.2); color:#33bf7a;">Active</span>
+                </div>
+              </div>
+
+              <!-- Bottom metric bar -->
+              <div class="mt-5 grid grid-cols-3 gap-3">
+                <div class="rounded-xl p-3 text-center" style="background:rgba(0,166,81,0.12);">
+                  <div class="text-white font-700 font-display text-lg" style="font-weight:700;">47</div>
+                  <div class="text-white/50 text-xs font-body">Sites Today</div>
+                </div>
+                <div class="rounded-xl p-3 text-center" style="background:rgba(0,48,135,0.3);">
+                  <div class="text-white font-700 font-display text-lg" style="font-weight:700;">R2.1M</div>
+                  <div class="text-white/50 text-xs font-body">Contracts '24</div>
+                </div>
+                <div class="rounded-xl p-3 text-center" style="background:rgba(0,166,81,0.12);">
+                  <div class="text-white font-700 font-display text-lg" style="font-weight:700;">4.9★</div>
+                  <div class="text-white/50 text-xs font-body">Avg Rating</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating badge -->
+        <div class="absolute -bottom-6 -left-8 bg-white rounded-2xl shadow-2xl p-4 flex items-center gap-3" style="box-shadow:0 20px 50px rgba(0,0,0,0.2);">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:#00A651;">
+            <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <div class="font-display text-sm font-700 text-gray-900" style="font-weight:700;">OHSA Compliant</div>
+            <div class="text-gray-400 text-xs font-body">Health & Safety Certified</div>
+          </div>
+        </div>
+
+        <!-- Floating badge 2 -->
+        <div class="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl p-3 flex items-center gap-2.5" style="box-shadow:0 12px 30px rgba(0,0,0,0.15);">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(0,48,135,0.1);">
+            <svg width="16" height="16" fill="none" stroke="#003087" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="font-display text-xs font-700 text-gray-900" style="font-weight:700;">ISO Standards</div>
+            <div class="text-gray-400 text-xs font-body">Quality Assured</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave divider -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 80L1440 80L1440 30C1200 70 960 10 720 40C480 70 240 10 0 30L0 80Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== INDUSTRY CLIENTS STRIP ===== -->
+<section class="py-10 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-xs font-body tracking-widest uppercase text-gray-400 font-600 mb-6">Trusted by businesses across Gauteng</p>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <div class="industry-pill"><span>🏢</span> Office Parks</div>
+      <div class="industry-pill"><span>🛒</span> Shopping Centres</div>
+      <div class="industry-pill"><span>🏭</span> Factories & Warehouses</div>
+      <div class="industry-pill"><span>🏫</span> Schools & Colleges</div>
+      <div class="industry-pill"><span>🏥</span> Medical Facilities</div>
+      <div class="industry-pill"><span>🏘️</span> Residential Estates</div>
+      <div class="industry-pill"><span>🏨</span> Hotels & Hospitality</div>
+      <div class="industry-pill"><span>🏗️</span> Property Developers</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="py-20 lg:py-28" style="background:#f4f7fb;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Visual side -->
+      <div class="reveal relative">
+        <div class="relative rounded-3xl overflow-hidden" style="background:linear-gradient(135deg,#003087,#00452a);">
+          <div class="p-8 lg:p-10">
+            <!-- Big number highlight -->
+            <div class="font-display font-800 text-white leading-none mb-2" style="font-size:clamp(72px,10vw,110px); font-weight:800; opacity:0.12; line-height:1;">10</div>
+            <div class="relative -mt-16 lg:-mt-20">
+              <div class="font-display text-white font-700 text-4xl mb-2" style="font-weight:700;">A Decade of<br/><span style="color:#00A651;">Clean Excellence</span></div>
+              <p class="font-body text-white/70 text-base leading-relaxed mt-4 max-w-md">
+                Founded in Gauteng, GTV FMS has grown from a local cleaning contractor into a full-service facilities management company, trusted by some of South Africa's leading property managers, corporates and institutions.
+              </p>
+
+              <div class="mt-8 grid grid-cols-2 gap-4">
+                <div class="rounded-2xl p-4" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.12);">
+                  <div class="font-display text-white text-2xl font-800" style="font-weight:800;">200+</div>
+                  <div class="text-white/60 text-xs font-body mt-0.5">Active Clients</div>
+                </div>
+                <div class="rounded-2xl p-4" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.12);">
+                  <div class="font-display text-white text-2xl font-800" style="font-weight:800;">50+</div>
+                  <div class="text-white/60 text-xs font-body mt-0.5">Trained Staff</div>
+                </div>
+                <div class="rounded-2xl p-4" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.12);">
+                  <div class="font-display text-white text-2xl font-800" style="font-weight:800;">JHB + PTA</div>
+                  <div class="text-white/60 text-xs font-body mt-0.5">Coverage Area</div>
+                </div>
+                <div class="rounded-2xl p-4" style="background:rgba(0,166,81,0.2); border:1px solid rgba(0,166,81,0.25);">
+                  <div class="font-display text-white text-2xl font-800" style="color:#33bf7a; font-weight:800;">98%</div>
+                  <div class="text-white/60 text-xs font-body mt-0.5">Client Retention</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating cert badge -->
+        <div class="absolute -bottom-5 right-6 bg-white rounded-2xl shadow-xl px-5 py-3 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(0,48,135,0.1);">
+            <svg width="20" height="20" fill="none" stroke="#003087" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <div>
+            <div class="font-display text-gray-900 text-sm font-700" style="font-weight:700;">CIPC Registered</div>
+            <div class="text-gray-400 text-xs font-body">Fully compliant business</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text side -->
+      <div class="reveal reveal-delay-2">
+        <div class="section-chip mb-5">
+          <span>🏆</span> About GTV FMS
+        </div>
+        <h2 class="font-display text-3xl lg:text-4xl font-800 text-gray-900 mb-5 leading-tight" style="font-weight:800;">
+          Gauteng's Partner for <span style="color:#003087;">Professional Facilities</span> Management
+        </h2>
+        <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+          GTV FMS was established with a single mission: to deliver <strong>reliable, high-quality facilities management</strong> and cleaning services that help our clients maintain clean, safe, and efficient environments.
+        </p>
+        <p class="font-body text-gray-600 text-base leading-relaxed mb-6">
+          We understand that every business is unique. Whether you manage a bustling shopping centre in Johannesburg, a factory in Germiston, or a school in Pretoria, we design bespoke service schedules that keep your space spotless without disrupting your operations.
+        </p>
+
+        <!-- Value props -->
+        <div class="space-y-4 mb-8">
+          <div class="why-card rounded-xl p-4 flex items-start gap-4" style="background:#f8fffe;">
+            <div class="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center mt-0.5" style="background:rgba(0,166,81,0.1);">
+              <svg width="16" height="16" fill="none" stroke="#00A651" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 text-sm" style="font-weight:700;">Trained & Vetted Staff</div>
+              <div class="text-gray-500 text-sm font-body mt-0.5">All team members are PSIRA-registered and background-checked for your peace of mind.</div>
+            </div>
+          </div>
+          <div class="why-card rounded-xl p-4 flex items-start gap-4" style="background:#f8fffe;">
+            <div class="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center mt-0.5" style="background:rgba(0,166,81,0.1);">
+              <svg width="16" height="16" fill="none" stroke="#00A651" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 text-sm" style="font-weight:700;">OHSA & Environmental Compliance</div>
+              <div class="text-gray-500 text-sm font-body mt-0.5">We use eco-friendly, approved chemicals and follow strict OHSA health and safety protocols.</div>
+            </div>
+          </div>
+          <div class="why-card rounded-xl p-4 flex items-start gap-4" style="background:#f8fffe;">
+            <div class="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center mt-0.5" style="background:rgba(0,166,81,0.1);">
+              <svg width="16" height="16" fill="none" stroke="#00A651" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 text-sm" style="font-weight:700;">Tender-Ready & BBB-EE Compliant</div>
+              <div class="text-gray-500 text-sm font-body mt-0.5">We hold valid B-BBEE certificates and are actively registered on the National Treasury Supplier Database (CSD).</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-700 text-white text-sm transition-all hover:opacity-90 hover:scale-105" style="background:#003087; font-weight:700;">
+          Learn More About Us
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-chip mx-auto mb-5"><span>🧹</span> What We Do</div>
+      <h2 class="font-display text-3xl lg:text-5xl font-800 text-gray-900 mb-4 leading-tight" style="font-weight:800;">
+        Comprehensive <span style="color:#003087;">Facilities & Cleaning</span> Services
+      </h2>
+      <p class="font-body text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+        From daily office cleaning to specialised industrial deep cleans — we have the expertise, equipment and team to handle it all across Gauteng.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service 1 -->
+      <div class="service-card bg-white rounded-2xl p-6 reveal">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:rgba(0,48,135,0.08);">
+          <svg width="24" height="24" fill="none" stroke="#003087" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-700 text-gray-900 mb-2" style="font-weight:700;">Facilities Management</h3>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+          Comprehensive FM solutions including scheduled maintenance, property upkeep, vendor management and compliance reporting — all under one contract.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Planned Maintenance</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Compliance</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Reporting</span>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card bg-white rounded-2xl p-6 reveal reveal-delay-1">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:rgba(0,166,81,0.1);">
+          <svg width="24" height="24" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-700 text-gray-900 mb-2" style="font-weight:700;">Office Cleaning</h3>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+          Daily, weekly or monthly office cleaning services for open-plan offices, boardrooms, reception areas and ablution facilities. Minimal disruption guaranteed.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Daily Cleaning</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Sanitisation</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Waste Mgmt</span>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card bg-white rounded-2xl p-6 reveal reveal-delay-2">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:rgba(0,48,135,0.08);">
+          <svg width="24" height="24" fill="none" stroke="#003087" stroke-width="2" viewBox="0 0 24 24"><path d="M2 20h.01M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-700 text-gray-900 mb-2" style="font-weight:700;">Industrial Cleaning</h3>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+          Heavy-duty cleaning for factories, warehouses, manufacturing plants and distribution centres. We handle grease, chemical residue, machinery areas and loading bays.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Factories</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Warehouses</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">OHSA Compliant</span>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card bg-white rounded-2xl p-6 reveal">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:rgba(0,166,81,0.1);">
+          <svg width="24" height="24" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-700 text-gray-900 mb-2" style="font-weight:700;">Hygiene Services</h3>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+          Full-spectrum hygiene solutions including sanitary bin services, hand sanitiser stations, air fresheners, consumable restocking and washroom audits.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Sanitary Bins</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Dispensers</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Consumables</span>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card bg-white rounded-2xl p-6 reveal reveal-delay-1">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:rgba(0,48,135,0.08);">
+          <svg width="24" height="24" fill="none" stroke="#003087" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-700 text-gray-900 mb-2" style="font-weight:700;">Deep Cleaning</h3>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+          Intensive once-off or periodic deep cleans for move-in/move-out scenarios, post-construction, post-event clean-ups, and pre-inspection preparation.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Move-In/Out</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Post-Construction</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0f4ff; color:#003087;">Once-Off</span>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card bg-white rounded-2xl p-6 reveal reveal-delay-2">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:rgba(0,166,81,0.1);">
+          <svg width="24" height="24" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="font-display text-lg font-700 text-gray-900 mb-2" style="font-weight:700;">Specialised Cleaning & Maintenance</h3>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+          Carpet and upholstery cleaning, window washing, high-pressure cleaning, paving & parking areas, roof & gutter cleaning, and general building maintenance.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Carpet & Upholstery</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">Windows</span>
+          <span class="text-xs px-2.5 py-1 rounded-full font-body font-500" style="background:#f0faf5; color:#00A651;">High Pressure</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA below services -->
+    <div class="text-center mt-12 reveal">
+      <p class="font-body text-gray-500 mb-4">Need a service not listed here? We offer customised solutions.</p>
+      <a href="#quote" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-700 text-white transition-all hover:opacity-90 hover:scale-105" style="background: linear-gradient(90deg,#003087,#00A651); font-weight:700;">
+        Request a Custom Quote
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section id="why-us" class="py-20 lg:py-28" style="background:#f4f7fb;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div class="reveal">
+        <div class="section-chip mb-5"><span>✅</span> Why Choose GTV FMS</div>
+        <h2 class="font-display text-3xl lg:text-4xl font-800 text-gray-900 mb-5 leading-tight" style="font-weight:800;">
+          The Competitive Edge <span style="color:#003087;">That Keeps Clients Coming Back</span>
+        </h2>
+        <p class="font-body text-gray-500 leading-relaxed mb-8">
+          We don't just clean — we protect your brand, your people and your reputation. Here's why Gauteng's leading businesses choose GTV FMS for their facilities needs.
+        </p>
+
+        <div class="space-y-4">
+          <div class="why-card rounded-xl p-5 flex items-start gap-4 bg-white">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:#003087;">
+              <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Experienced & Uniformed Teams</div>
+              <div class="font-body text-gray-500 text-sm leading-relaxed">All cleaners and supervisors are uniformed, trained to industry standards, and committed to professionalism on every site.</div>
+            </div>
+          </div>
+          <div class="why-card rounded-xl p-5 flex items-start gap-4 bg-white">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:#00A651;">
+              <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Reliable & Punctual Service</div>
+              <div class="font-body text-gray-500 text-sm leading-relaxed">We show up on time, every time. Our supervisors conduct daily quality checks and you receive regular service reports.</div>
+            </div>
+          </div>
+          <div class="why-card rounded-xl p-5 flex items-start gap-4 bg-white">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:#003087;">
+              <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Fully Insured & Compliant</div>
+              <div class="font-body text-gray-500 text-sm leading-relaxed">Public liability insurance, COIDA registration, B-BBEE certificate, and CSD registration — all in order for tender submissions.</div>
+            </div>
+          </div>
+          <div class="why-card rounded-xl p-5 flex items-start gap-4 bg-white">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:#00A651;">
+              <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <div>
+              <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Competitive ZAR Pricing</div>
+              <div class="font-body text-gray-500 text-sm leading-relaxed">Transparent, itemised pricing in South African Rand. No hidden fees, no surprises — just great value for professional service.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Process -->
+      <div class="reveal reveal-delay-2">
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+          <h3 class="font-display text-xl font-700 text-gray-900 mb-6" style="font-weight:700;">How We Work</h3>
+
+          <div class="relative">
+            <!-- Connector line -->
+            <div class="absolute left-5 top-8 bottom-8 w-0.5" style="background:linear-gradient(to bottom, #003087, #00A651);"></div>
+
+            <div class="space-y-8">
+              <div class="flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-display font-800 text-sm relative z-10" style="background:#003087; font-weight:800;">1</div>
+                <div class="pt-1">
+                  <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Request a Free Quote</div>
+                  <div class="font-body text-gray-500 text-sm">Fill in our quick form or call us. We respond within 24 hours.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-display font-800 text-sm relative z-10" style="background: linear-gradient(135deg, #003087, #00A651); font-weight:800;">2</div>
+                <div class="pt-1">
+                  <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Site Assessment</div>
+                  <div class="font-body text-gray-500 text-sm">Our consultant visits your premises, assesses needs and designs a custom cleaning plan.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-display font-800 text-sm relative z-10" style="background: linear-gradient(135deg, #00A651, #007035); font-weight:800;">3</div>
+                <div class="pt-1">
+                  <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Customised Proposal</div>
+                  <div class="font-body text-gray-500 text-sm">You receive a detailed, itemised proposal with clear ZAR pricing and service schedule.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-display font-800 text-sm relative z-10" style="background:#00A651; font-weight:800;">4</div>
+                <div class="pt-1">
+                  <div class="font-display font-700 text-gray-900 mb-1" style="font-weight:700;">Service Begins</div>
+                  <div class="font-body text-gray-500 text-sm">Our team arrives uniformed, equipped and ready. You get regular reporting and a dedicated account manager.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#quote" class="mt-8 w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-display font-700 text-white text-sm transition-all hover:opacity-90" style="background:linear-gradient(90deg,#003087,#00A651); font-weight:700;">
+            Start the Process Today
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-chip mx-auto mb-5"><span>💬</span> Client Testimonials</div>
+      <h2 class="font-display text-3xl lg:text-4xl font-800 text-gray-900 mb-4 leading-tight" style="font-weight:800;">
+        Trusted by Gauteng's <span style="color:#003087;">Leading Businesses</span>
+      </h2>
+      <p class="font-body text-gray-500 text-lg max-w-xl mx-auto">Don't just take our word for it — here's what our clients say about working with GTV FMS.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="testimonial-card rounded-2xl p-7 bg-white reveal">
+        <div class="flex gap-1 mb-4">
+          <span style="color:#f59e0b;">★★★★★</span>
+        </div>
+        <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 italic">
+          "GTV FMS has been cleaning our office park in Sandton for over three years. Their team is always punctual, professional and thorough. We've never had a complaint from our tenants."
+        </p>
+        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-display font-800 text-white" style="background:#003087; font-weight:800;">TM</div>
+          <div>
+            <div class="font-display font-700 text-gray-900 text-sm" style="font-weight:700;">Thabo Molefe</div>
+            <div class="text-gray-400 text-xs font-body">Property Manager, Sandton Office Park</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card rounded-2xl p-7 bg-white reveal reveal-delay-1">
+        <div class="flex gap-1 mb-4">
+          <span style="color:#f59e0b;">★★★★★</span>
+        </div>
+        <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 italic">
+          "As a shopping centre manager, hygiene is critical to our footfall. GTV FMS exceeded all expectations — their hygiene service team is responsive and the quality is consistent. Highly recommend."
+        </p>
+        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-display font-800 text-white" style="background:#00A651; font-weight:800;">SR</div>
+          <div>
+            <div class="font-display font-700 text-gray-900 text-sm" style="font-weight:700;">Siphokazi Radebe</div>
+            <div class="text-gray-400 text-xs font-body">Centre Manager, Centurion Retail Mall</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card rounded-2xl p-7 bg-white reveal reveal-delay-2">
+        <div class="flex gap-1 mb-4">
+          <span style="color:#f59e0b;">★★★★★</span>
+        </div>
+        <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 italic">
+          "We brought in GTV FMS for a post-construction deep clean before our factory launch. The result was outstanding — spotless from floor to ceiling. They are now our permanent FM partner."
+        </p>
+        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-display font-800 text-white" style="background:#003087; font-weight:800;">PV</div>
+          <div>
+            <div class="font-display font-700 text-gray-900 text-sm" style="font-weight:700;">Pieter van der Berg</div>
+            <div class="text-gray-400 text-xs font-body">Operations Director, Germiston Manufacturing</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE FORM ===== -->
+<section id="quote" class="quote-section py-20 lg:py-28 relative overflow-hidden">
+  <div class="hero-orb hero-orb-1" style="opacity:0.1; top:-100px; right:0;"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Left: Info -->
+      <div class="reveal">
+        <div class="section-chip mb-5" style="background:rgba(0,166,81,0.15); color:#33bf7a; border-color:rgba(0,166,81,0.3);">
+          <span>📋</span> Get a Free Quote
+        </div>
+        <h2 class="font-display text-3xl lg:text-4xl font-800 text-white mb-5 leading-tight" style="font-weight:800;">
+          Ready to Upgrade Your <span style="color:#00A651;">Facilities?</span>
+        </h2>
+        <p class="font-body text-white/70 text-base leading-relaxed mb-8">
+          Fill in the form and one of our consultants will contact you within 24 hours with a tailored, no-obligation quotation for your facility.
+        </p>
+
+        <div class="space-y-5 mb-8">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,166,81,0.2); border:1px solid rgba(0,166,81,0.3);">
+              <svg width="18" height="18" fill="none" stroke="#33bf7a" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.82 19.79 19.79 0 01.1 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <div class="text-white font-display font-600 text-sm" style="font-weight:600;">Call or WhatsApp Us</div>
+              <a href="tel:+27100000000" class="text-white/70 font-body text-sm hover:text-white transition-colors">+27 10 000 0000</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,166,81,0.2); border:1px solid rgba(0,166,81,0.3);">
+              <svg width="18" height="18" fill="none" stroke="#33bf7a" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="text-white font-display font-600 text-sm" style="font-weight:600;">Email Us</div>
+              <a href="mailto:info@gtvfms.co.za" class="text-white/70 font-body text-sm hover:text-white transition-colors">info@gtvfms.co.za</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,166,81,0.2); border:1px solid rgba(0,166,81,0.3);">
+              <svg width="18" height="18" fill="none" stroke="#33bf7a" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="text-white font-display font-600 text-sm" style="font-weight:600;">Based In</div>
+              <div class="text-white/70 font-body text-sm">Gauteng, South Africa (Serving JHB & PTA)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp direct -->
+        <a href="https://wa.me/27100000000?text=Hi%20GTV%20FMS%2C%20I%27d%20like%20to%20request%20a%20free%20quote%20for%20your%20services." target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl font-display font-700 text-white transition-all hover:opacity-90 hover:scale-105" style="background:#25D366; font-weight:700;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="reveal reveal-delay-2">
+        <div class="rounded-2xl p-8" style="background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); backdrop-filter:blur(10px);">
+          <h3 class="font-display font-700 text-white text-xl mb-6" style="font-weight:700;">Request Your Free Quote</h3>
+          <form id="quoteForm" class="space-y-4" novalidate>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="text-white/70 text-xs font-body block mb-1.5">Full Name *</label>
+                <input type="text" class="form-input" placeholder="Your full name" required />
+              </div>
+              <div>
+                <label class="text-white/70 text-xs font-body block mb-1.5">Company Name</label>
+                <input type="text" class="form-input" placeholder="Company / Business" />
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="text-white/70 text-xs font-body block mb-1.5">Phone Number *</label>
+                <input type="tel" class="form-input" placeholder="+27 XX XXX XXXX" required />
+              </div>
+              <div>
+                <label class="text-white/70 text-xs font-body block mb-1.5">Email Address *</label>
+                <input type="email" class="form-input" placeholder="you@company.co.za" required />
+              </div>
+            </div>
+            <div>
+              <label class="text-white/70 text-xs font-body block mb-1.5">Service Required *</label>
+              <select class="form-select form-input" required>
+                <option value="" style="color:#9ca3af;">-- Select a service --</option>
+                <option>Facilities Management</option>
+                <option>Office Cleaning</option>
+                <option>Industrial Cleaning</option>
+                <option>Hygiene Services</option>
+                <option>Deep Cleaning</option>
+                <option>Specialised Cleaning</option>
+                <option>Multiple Services</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-white/70 text-xs font-body block mb-1.5">Type of Property *</label>
+              <select class="form-select form-input" required>
+                <option value="">-- Property type --</option>
+                <option>Office Building / Park</option>
+                <option>Shopping Centre / Retail</option>
+                <option>Factory / Warehouse</option>
+                <option>School / Educational</option>
+                <option>Hospital / Medical</option>
+                <option>Residential Estate</option>
+                <option>Hotel / Hospitality</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-white/70 text-xs font-body block mb-1.5">Property Location (City / Area)</label>
+              <input type="text" class="form-input" placeholder="e.g. Sandton, Midrand, Pretoria East" />
+            </div>
+            <div>
+              <label class="text-white/70 text-xs font-body block mb-1.5">Additional Details</label>
+              <textarea rows="3" class="form-input resize-none" placeholder="Tell us about the size of the facility, frequency needed, any special requirements..."></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 rounded-xl font-display font-700 text-white text-base transition-all hover:opacity-90 hover:scale-[1.02]" style="background:#00A651; font-weight:700; box-shadow:0 8px 24px rgba(0,166,81,0.3);">
+              Submit Quote Request →
+            </button>
+            <p class="text-white/40 text-xs font-body text-center">We respond within 24 hours. No spam, no obligation.</p>
+          </form>
+          <div id="formSuccess" class="hidden text-center py-8">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background:rgba(0,166,81,0.2);">
+              <svg width="32" height="32" fill="none" stroke="#00A651" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="font-display font-700 text-white text-xl mb-2" style="font-weight:700;">Quote Request Sent!</div>
+            <div class="font-body text-white/60 text-sm">Thank you! Our team will contact you within 24 hours.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAP SECTION ===== -->
+<section id="contact" class="py-20 lg:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <div class="section-chip mx-auto mb-5"><span>📍</span> Our Location</div>
+      <h2 class="font-display text-3xl lg:text-4xl font-800 text-gray-900 mb-3 leading-tight" style="font-weight:800;">
+        Serving <span style="color:#003087;">All of Gauteng</span>
+      </h2>
+      <p class="font-body text-gray-500 max-w-lg mx-auto">Based in Gauteng, we service Johannesburg, Pretoria, Midrand, Centurion, Germiston, Randburg and surrounding areas.</p>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-lg reveal" style="height:380px; border:1px solid #e2e8f0;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458058.6397001827!2d27.85036075!3d-26.10852845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sGauteng%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#001d54;" class="pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+      <!-- Brand col -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:#00A651;">
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <div class="font-display font-800 text-white text-xl" style="font-weight:800;">GTV FMS</div>
+            <div class="text-white/40 text-xs font-body">Facilities Management Services</div>
+          </div>
+        </div>
+        <p class="font-body text-white/50 text-sm leading-relaxed max-w-xs">
+          Gauteng's trusted facilities management and professional cleaning company. Serving offices, malls, factories and estates since 2015.
+        </p>
+        <div class="flex gap-3 mt-5">
+          <a href="https://wa.me/27100000000" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:scale-110" style="background:#25D366;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:info@gtvfms.co.za" class="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:scale-110" style="background:rgba(255,255,255,0.1);">
+            <svg width="16" height="16" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="tel:+27100000000" class="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:scale-110" style="background:rgba(255,255,255,0.1);">
+            <svg width="16" height="16" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.82 19.79 19.79 0 01.1 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <div class="font-display font-700 text-white text-sm mb-4" style="font-weight:700;">Our Services</div>
+        <ul class="space-y-2.5">
+          <li><a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors">Facilities Management</a></li>
+          <li><a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors">Office Cleaning</a></li>
+          <li><a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors">Industrial Cleaning</a></li>
+          <li><a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors">Hygiene Services</a></li>
+          <li><a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors">Deep Cleaning</a></li>
+          <li><a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors">Specialised Cleaning</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="font-display font-700 text-white text-sm mb-4" style="font-weight:700;">Contact Us</div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2.5">
+            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.82 19.79 19.79 0 01.1 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+27100000000" class="font-body text-white/50 text-sm hover:text-white transition-colors">+27 10 000 0000</a>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@gtvfms.co.za" class="font-body text-white/50 text-sm hover:text-white transition-colors">info@gtvfms.co.za</a>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="font-body text-white/50 text-sm">Gauteng, South Africa</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" fill="none" stroke="#00A651" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span class="font-body text-white/50 text-sm">Mon–Fri: 07:00–17:00<br/>Sat: 08:00–13:00</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="font-body text-white/30 text-xs">© 2025 GTV FMS. All rights reserved. Registered in South Africa.</p>
+      <div class="flex items-center gap-2">
+        <span class="font-body text-white/30 text-xs">B-BBEE Compliant</span>
+        <span class="text-white/20">|</span>
+        <span class="font-body text-white/30 text-xs">OHSA Compliant</span>
+        <span class="text-white/20">|</span>
+        <span class="font-body text-white/30 text-xs">CSD Registered</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+<a href="https://wa.me/27100000000?text=Hi%20GTV%20FMS%2C%20I%27d%20like%20to%20request%20a%20free%20quote." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // ── NAV SCROLL ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) navbar.classList.add('nav-scrolled');
+    else navbar.classList.remove('nav-scrolled');
+    // Progress bar
+    const total = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('progress-bar').style.width = (window.scrollY / total * 100) + '%';
+  });
+
+  // ── MOBILE MENU ──
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // ── REVEAL ON SCROLL ──
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ── COUNTER ANIMATION ──
+  function animateCounter(el, target, suffix) {
+    let start = 0;
+    const duration = 2000;
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  const counterEls = document.querySelectorAll('.counter-num');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        const suffix = el.textContent.includes('%') ? '%' : '+';
+        animateCounter(el, target, suffix);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counterEls.forEach(el => counterObserver.observe(el));
+
+  // ── FORM SUBMIT ──
+  document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('formSuccess').classList.remove('hidden');
+  });
+
+  // ── SMOOTH SCROLL ──
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+</body>
+</html>
