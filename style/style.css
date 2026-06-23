@@ -6,17 +6,21 @@
       --gray: #64748b;
     }
     * { box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; color: #1e293b; background: #fff; scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; color: #1e293b; background: #fff; scroll-behavior: smooth; overflow-x: hidden; }
     h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 96px; }
 
     /* NAV */
-    .nav-scrolled { background: rgba(0,48,135,0.97) !important; backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+    #navbar { background: rgba(15, 23, 42, 0.18); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .nav-scrolled { background: rgba(0,48,135,0.97) !important; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
 
     /* HERO */
     .hero-bg {
       background: linear-gradient(135deg, #001d54 0%, #003087 50%, #00452a 100%);
       position: relative;
       overflow: hidden;
+      min-height: calc(100vh - 5.25rem);
     }
     .hero-bg::before {
       content: '';
@@ -39,6 +43,7 @@
     .stat-card {
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.12);
+      -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
 
@@ -105,6 +110,8 @@
       border-radius: 8px;
       padding: 12px 16px;
       width: 100%;
+      min-height: 48px;
+      font-size: 16px;
       font-family: 'DM Sans', sans-serif;
       transition: border-color 0.2s, background 0.2s;
     }
@@ -163,3 +170,66 @@
       transition: box-shadow 0.2s;
     }
     .industry-pill:hover { box-shadow: 0 6px 20px rgba(0,48,135,0.1); }
+
+    @media (max-width: 768px) {
+      .hero-bg {
+        min-height: initial;
+      }
+      .hero-bg .max-w-7xl {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+      }
+      .hero-bg h1 {
+        font-size: clamp(2.1rem, 8vw, 3rem);
+        line-height: 1.08;
+      }
+      .hero-bg p {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+      .badge-stripe {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        padding: 8px 12px;
+        line-height: 1.5;
+      }
+      .section-chip {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+      .wa-float {
+        width: 54px;
+        height: 54px;
+        bottom: 18px;
+        right: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-bg .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .hero-bg h1 {
+        font-size: 2.2rem;
+      }
+      .hero-bg .flex.flex-col.sm\:flex-row {
+        flex-direction: column;
+      }
+      .hero-bg .flex.flex-col.sm\:flex-row a {
+        width: 100%;
+      }
+      .stat-card {
+        padding: 0.9rem;
+      }
+      .stat-card .font-display {
+        font-size: 1.45rem;
+      }
+      .form-input {
+        padding: 11px 14px;
+      }
+    }
